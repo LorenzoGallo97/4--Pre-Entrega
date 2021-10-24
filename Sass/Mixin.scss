@@ -1,0 +1,656 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,300;1,400&display=swap');
+/**Header**/
+@mixin box_cards_card_header_inicio{
+    display: grid;
+    border: solid 10px black;
+    padding: 10px;
+    display: inline-block;
+    background-color: greenyellow;
+    color: grey;
+    font-size: 300%;
+    font-style: normal;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    width: 1450px;
+    height: 165px;
+    transition: height 2s;
+    &box_cards_card_tittle_header_inicio{
+        text-decoration: underline;
+    }
+        nav ol li a{
+            background-color: greenyellow;
+            color: grey;
+            font-size: 75%;
+            font-style: normal;
+           font-family: 'Times New Roman', Times, serif;
+           text-align: center;
+           width:85px;
+           height:25px;
+           transition: height 2s
+        }
+}
+/**Main**/
+@mixin box_cards_card_main_inicio{
+    display: grid;
+    grid-column: 3/2;
+    border: solid 10px black;
+    padding: 10px;
+    display: inline-block;
+    background-color: green;
+    color: blue;
+    font-size: 70px;
+    font-style:normal;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    width:1450px;
+    height: 1563px;
+    transition: height 2s;
+    @include box_cards_card_info_main_inicio{
+        color: blue;
+        font-size: 150%;
+        font-style: normal;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: right;
+    }
+        @include box_cards_card_tittle_main_inicio{
+            color: blue;
+            font-size: 150%;
+            font-style: normal;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: right;
+        }
+            @include box_cards_card_info_main_inicio_A02{
+                color: blue;
+                font-size: 45px;
+                text-align: center;
+            }
+                @include box_cards_card_info_main_inicio_A03{
+                    color: blue;
+                    font-size: 45px;
+                    text-align: center;
+                }
+}
+@mixin box_cards_card_div_inicio{
+    background-color: darkblue;
+    border: solid 10px black;
+    padding: 10px;
+    display: inline-block;
+    color: black;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    margin: 40px 0px;
+    transition: height 2s;
+    @include box_cards_card_tittle_div_inicio{
+        color: black;
+        font-size: 150%;
+        font-style: normal;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: right;  
+    }
+        @include box_cards_card_info_div_inicio{
+            color: black;
+            font-size: 45px;
+            text-align: center;
+        }
+}
+/**Footer**/
+@mixin box_cards_card_footer_inicio{
+    border:solid 10px black;
+    padding: 10px;
+    display: grid;
+    grid-column: 3/2;
+    background-color: brown;
+    font-size: 200%;
+    color: brown;
+    font-size: 70px;
+    font-style: normal;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: right;
+    width:1450px;
+    height:1350px;
+    transition: height 2s;
+    @include box_cards_card_tittle_footer_inicio{
+        color: whitesmoke;
+        font-size: 150%;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        text-align: center;
+    }
+        @include box_cards_card_info_footer_inicio_Sobre-Nosotros{
+            color: whitesmoke;
+            font-size: 30px;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: right;
+        }
+            @include box_cards_card_info_footer_inicio_Dirección{
+                color: whitesmoke;
+                font-size: 30px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                text-align: right;
+            }
+                @include box_cards_card_info_footer_inicio_Localidad{
+                    color: whitesmoke;
+                    font-size: 30px;
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                    text-align: right;
+                }
+                    ol li{
+                        color: whitesmoke;
+                        font-size: 30px;
+                        font-family: Georgia, 'Times New Roman', Times, serif;
+                        text-align: left;
+                    }
+                        #Celular{
+                            color: whitesmoke;
+                            font-size: 30px;
+                            font-family: Georgia, 'Times New Roman', Times, serif;
+                            text-align: left;
+                        }
+                            #Telefono{
+                                color: whitesmoke;
+                                font-size: 30px;
+                                font-family: Georgia, 'Times New Roman', Times, serif;
+                                text-align: left;
+                            }
+                                &box_cards_card_info_footer_inicio_Copyright{
+                                    color: whitesmoke;
+                                    font-size: 30px;
+                                    font-family: Georgia, 'Times New Roman', Times, serif;
+                                    text-align: right;
+                                }
+}
+/**Header**/
+@mixin box_cards_card_header_autos{
+    border: solid 10px black;
+    display: grid;
+    grid-column: 3/2;
+    padding: 10px;
+    display: inline-block;
+    background-color: greenyellow;
+    color: grey;
+    font-size: 300%;
+    font-style: normal;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    width: 1450px;
+    height: 165px;
+    transition: height 2s;
+    @include box_cards_card_tittle_header_autos{ 
+        color: grey;
+        font-size: 200%;
+        font-style: normal;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+        text-decoration: underline;
+    }
+        nav ol a{
+            border:solid 10px black;
+            padding: 10px;
+            background-color: greenyellow;
+            color: grey;
+            font-size: 75%;
+            font-style: normal;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            width:85px;
+            height:25px;
+            transition: height 2s;
+        }
+}
+/**Main**/
+@mixin box_cards_card_main_autos{
+    display: grid;
+    grid-column: 3/2;
+    border: solid 10px black;
+    padding: 10px;
+    display: inline-block;
+    background-color: green;
+    color: blue;
+    font-size: 70px;
+    font-style:normal;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    width:1450px;
+    height:3520px;
+    transition: height 2s;
+    @include box_cards_card_tittle_main_autos{
+        color: blue;
+        font-size: 150%;
+        font-style: normal;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: left;
+    }
+        @include box_cards_card_info_main_autos_A02{
+            color: blue;
+            font-size: 45px;
+            font-style: normal;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            }
+            @include box_cards_card_info_main_autos_A03{
+                color: bluev;
+                font-size: 45px;
+                font-style: normal;
+                font-family: 'Times New Roman', Times, serif;
+                text-align: center;
+            }
+                @include box_cards_card_info_main_autos_A04{
+                    color: blue;
+                    font-size: 45px;
+                    font-style: normal;
+                    font-family: 'Times New Roman', Times, serif;
+                    text-align: center;
+                }
+                    @include box_cards_card_info_main_autos_A11{
+                        color: blue;
+                        font-size: 45px;
+                        font-style: normal;
+                        font-family: 'Times New Roman', Times, serif;
+                        text-align: center;
+                        }
+                        @include box_cards_card_info_main_autos_A12{
+                            color: blue;
+                            font-size: 45px;
+                            font-style: normal;
+                            font-family: 'Times New Roman', Times, serif;
+                            text-align: center;
+                        }
+}
+@mixin box_cards_card_div_autos{
+    background-color: darkblue;
+    border: solid 10px black;
+    padding: 10px;
+    display: inline-block;
+    color: black;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    margin: 40px 0px;
+    transition: height 2s;
+    @include box_cards_card_tittle_div_autos{
+        color: black;
+        font-size: 30px;
+        font-style: normal;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: right;
+    }
+        @include box_cards_card_info_div_autos{
+            color: black;
+            font-size: 30px;
+            font-style: normal;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: right;
+        }
+}
+/**Footer**/
+@mixin box_cards_card_footer_autos{
+    display: grid;
+    grid-column: 3/2;
+    border: solid 10px black;
+    padding: 10px;
+    display: inline-block;
+    background-color: brown;
+    display: grid;
+    grid-column: 3/2;
+    transition: height 2s;
+    @include box_cards_card_tittle_footer_autos{
+        color: whitesmoke;
+        font-size: 150%;
+        font-style: normal;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+    }
+        @include box_cards_card_info_footer_autos_Sobre-Nosotros{
+            color: whitesmoke;
+            font-size: 30px;
+            font-style: normal;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: right;
+        }
+            @include box_cards_card_info_footer_autos_Dirección{
+                color: whitesmoke;
+                font-size: 30px;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                text-align: right;
+            }
+                @include box_cards_card_info_footer_autos_Localidad{
+                    color: whitesmoke;
+                    font-size: 30px;
+                    font-family: Georgia, 'Times New Roman', Times, serif;
+                    text-align: right;
+                }
+                    @include box_cards_card_info_footer_autos_Copyright{
+                        color: whitesmoke;
+                        font-size: 30px;
+                        font-family: Georgia, 'Times New Roman', Times, serif;
+                        text-align: right;
+                    }
+}
+/**Header**/
+@mixin box_cards_card_header_motos{
+    border: solid 10px black;
+    padding: 10px;
+    display: grid;
+    grid-column: 3/2;
+    background-color: greenyellow;
+    color: grey;
+    font-size: 300%;
+    font-style: normal;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    width: 1450px;
+    height: 165px;
+    transition: height 2s;
+    @include box_cards_card_tittle_header_motos{
+        color: grey;
+        font-size: 200%;
+        font-style: normal;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+        text-decoration: underline;
+    }
+        nav ol li a{
+            display: grid;
+            border:solid 10px black;
+            padding: 10px;
+            display: inline-block;
+            background-color: greenyellow;
+            color: grey;
+            font-size: 75%;
+            font-style: normal;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            width:85px;
+            height:25px;
+            transition: height 2s;
+        }
+}
+/**Main**/
+@mixin box_cards_card_main_motos{
+    display: grid;
+    grid-column: 3/2;
+    border: solid black;
+    padding: 10px;
+    display: inline-block;
+    background-color: green;
+    color: blue;
+    font-size: 70px;
+    font-style:normal;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    width:1450px;
+    height:4625px;
+    transition: height 2s;
+    @include box_cards_card_tittle_main_motos{
+        color: blue;
+        font-size: 45px;
+        font-style: normal;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+    }
+        @include box_cards_card_info_main_motos_M02{
+            color: blue;
+            font-size: 45px;
+            font-style: normal;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+        }
+            @include box_cards_card_info_main_motos_M03{
+                color: blue;
+                font-size: 45px;
+                font-style: normal;
+                font-family: 'Times New Roman', Times, serif;
+                text-align: center;
+            }
+                @include box_cards_card_info_main_motos_M04{
+                    color: blue;
+                    font-size: 45px;
+                    font-style: normal;
+                    font-family: 'Times New Roman', Times, serif;
+                    text-align: center;
+                }
+                    @include box_cards_card_info_main_motos_M05{
+                        color: blue;
+                        font-size: 45px;
+                        font-style: normal;
+                        font-family: 'Times New Roman', Times, serif;
+                        text-align: center;
+                    }
+                        @include box_cards_card_info_main_motos_M11{
+                            color: blue;
+                            font-size: 45px;
+                            font-style: normal;
+                            font-family: 'Times New Roman', Times, serif;
+                            text-align: center;
+                        }
+                            @include box_cards_card_info_main_motos_M12{
+                                color: blue;
+                                font-size: 45px;
+                                font-style: normal;
+                                font-family: 'Times New Roman', Times, serif;
+                                text-align: center;
+                            }
+}
+@mixin box_cards_card_div_motos{
+    background-color: darkblue;
+    border: solid 10px black;
+    padding: 10px;
+    display: inline-block;
+    color: black;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    margin: 40px 0px;
+    transition: height 2s;
+    @include box_cards_card_tittle_div_motos{
+        color: black;
+        font-size: 30px;
+        font-style: normal;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: right;
+        }
+        @include box_cards_card_info_div_motos{
+            color: black;
+            font-size: 30px;
+            font-style: normal;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: right;
+        }
+}
+/**Footer**/
+@mixin box_cards_card_footer_motos{
+    display: grid;
+    grid-column: 3/2;
+    border: solid 10px black;
+    padding: 10px;
+    display: inline-block;
+    background-color: brown;
+    display: grid;
+    grid-column: 3/2;
+    transition: height 2s;
+    @include box_cards_card_tittle_footer_motos{
+        color: whitesmoke;
+        font-size: 150%;
+        font-style: normal;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+    }
+        @include box_cards_card_info_footer_motos_Sobre-Nosotros{
+            color: whitesmoke;
+            font-size: 30px;
+        }
+            @include box_cards_card_info_footer_motos_Dirección{
+                color: whitesmoke;
+                font-size: 30px;
+            }
+                @include box_cards_card_info_footer_motos_Localidad{
+                    color: whitesmoke;
+                    font-size: 30px;
+                }
+                    @include box_cards_card_info_footer_motos_Copyright{
+                        color: whitesmoke;
+                        font-size: 30px;
+                    }
+}
+/**Header**/
+@mixin box_cards_card_header_registrate{
+    display: grid;
+    grid-column: 3/2;
+    border: solid 10px black;
+    padding: 10px;
+    display: inline-block;
+    background-color: greenyellow;
+    color: grey;
+    font-size: 300%;
+    font-style: normal;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    width: 1450px;
+    height: 165px;
+    transition: height 2s;
+    &box_cards_card_tittle_header_registrate{
+        color:grey;
+        font-size: 200%;
+        font-style: normal;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+        text-decoration: underline;
+    }
+        nav ol a{
+            background-color: greenyellow;
+            color: grey;
+            font-size: 75%;
+            font-style: normal;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            width:85px;
+            height:25px;
+            transition: height 2s;
+        }
+            @include Items{
+                background-color: greenyellow;
+                color: grey;
+                width:85px;
+                text-align: center;
+            }
+}
+/**Main**/
+@mixin box_cards_card_main_registrate{
+    display: grid;
+    grid-column: 3/2;
+    border: solid 10px black;
+    padding: 10px;
+    display: inline-block;
+    background-color: green;
+    color: blue;
+    font-size: 25px;
+    font-style:normal;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: left;
+    width:1450px;
+    height:710px;
+    transition: height 2s;
+    #Formulario{
+        color: blue;
+    }
+    #Nombre{
+        color: blue;
+    }
+    #Apellido{
+        color: blue;
+    }
+    #E-mail{
+        color: blue;
+    }
+    #Contraseña{
+        color: blue;
+    }
+    #Fecha{
+        color: blue;
+    }
+    #DNI{
+        color: blue;
+    }
+    #Particular{
+        color: blue;
+    }
+    #Gestor{
+        color: blue;
+    }
+    #Acepta{
+        color: blue;
+    }
+    #Provincias{
+        color: blue;
+    }
+}
+@mixin box_cards_card_div_registrate{
+    background-color: darkblue;
+    border: solid 10px black;
+    padding: 10px;
+    display: inline-block;
+    color: black;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    margin: 40px 0px;
+    transition: height 2s;
+    @include box_cards_card_tittle_div_registrate{
+        color: black;
+        font-size: 30px;
+        font-style: normal;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: right;
+    }
+        @include box_cards_card_info_div_registrate{
+            color: black;
+            font-size: 30px;
+            font-style: normal;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: right;
+        }
+}
+/**Footer**/
+@mixin box_cards_card_footer_registrate{
+    display: grid;
+    grid-column: 3/2;
+    border: solid 10px black;
+    padding: 10px;
+    display: inline-block;
+    background-color: brown;
+    display: grid;
+    grid-column: 3/2;
+    transition: height 2s;
+    @include box_cards_card_tittle_footer_inicio{
+        color: whitesmoke;
+        font-size: 150%;
+        font-style: normal;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: center;
+    }
+        @include box_cards_card_info_footer_registrate_Sobre-Nosotros{
+            color: whitesmoke;
+            font-size: 30px;
+            font-style: normal;
+            font-family: 'Times New Roman', Times, serif;
+            text-align: right;
+        }
+            @include box_cards_card_info_footer_registrate_Dirección{
+                color: whitesmoke;
+                font-size: 30px;
+                font-family: 'Times New Roman', Times, serif;
+                text-align: right;
+            }
+                @include box_cards_card_info_footer_registrate_Localidad{
+                    color: whitesmoke;
+                    font-size: 30px;
+                    font-family: 'Times New Roman', Times, serif;
+                    text-align: right;
+                }
+                    @include box_cards_card_info_footer_registrate_Copyright{
+                        color: whitesmoke;
+                        font-size: 30px;
+                        font-family: 'Times New Roman', Times, serif;
+                        text-align: right;
+                    }
+}
